@@ -1,25 +1,57 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LSViewController-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController id="01J-lp-oVM" userLabel="LSViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zk6-8a-rWL">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <color key="backgroundColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zk6-8a-rWL" secondAttribute="height" multiplier="3:4" id="Mhe-3f-nHb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_ls.png" translatesAutoresizingMaskIntoConstraints="NO" id="9M4-s4-gyr">
+                                <rect key="frame" x="107.5" y="235.5" width="553" height="553"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9M4-s4-gyr" secondAttribute="height" multiplier="1:1" id="cb4-i1-sqz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zk6-8a-rWL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="8MB-v0-LfT"/>
+                            <constraint firstItem="Zk6-8a-rWL" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="ECK-XH-mEj"/>
+                            <constraint firstItem="9M4-s4-gyr" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.72" id="My1-hG-cdg"/>
+                            <constraint firstItem="Zk6-8a-rWL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ps3-5k-GPd"/>
+                            <constraint firstItem="9M4-s4-gyr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gzA-rh-q65"/>
+                            <constraint firstItem="9M4-s4-gyr" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="pGy-7P-Wxk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-921" y="319"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg.png" width="2048" height="2732"/>
+        <image name="logo_ls.png" width="2048" height="2048"/>
+    </resources>
 </document>
