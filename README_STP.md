@@ -8,7 +8,7 @@ Il suit mon projet.
 Tout les droits des images, des sons et des musiques appartiennent à Nintendo. J'en ai profité par les fins académiques.
 
 J'ai essayé de le faire le plus complète possible, pourtant j'ai choisi le thème de Super Mario (le jeux), pas des animaux, dû
-à ma passion par les jeux vidéo et aussi que ceux jeux là sont recommendé pour les enfants qui ont 3 ans ou plus.
+à ma passion par les jeux vidéo et aussi que ceux jeux (jeux de Super Mario) sont recommendé pour les enfants qui ont 3 ans ou plus.
 
 Il y a un bug que j'ai pas reussi de le régler... La musique de la VICTOIRE ne marche pas à la deuxième fois.
 
